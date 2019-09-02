@@ -1,0 +1,108 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -*- Mode: Latex -*- %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% changeGlobalDefs.tex --- 
+%% 
+%% Filename: changeGlobalDefs.tex
+%% Description: 
+%% Authors: Mohamed Ahmed <m.ahmed@cs.ucl.ac.uk> @CHANGE / Emil Slusanschi <emil.slusanschi@cs.pub.ro> @INFOCORE
+%% Modification A. Capet, ULiège, for the EO4BSIS ESA project
+%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 
+%%% Change log:
+%% $Date$
+%% $Revision$
+%% $Id$
+%% 
+%% Global CHANGE VARS -- these shouldn't really be modified - i.e. leave this
+%% file alone unless you are making changes that effect the all documents. For
+%% local/deliverable relates definitions and macros use the macro.tex file.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\def\consortiumName {EO4BSIS}
+\def\change {\consortiumName\ }
+\def\consortiumICT {}
+
+\def\consortiumLogoLarge{\includegraphics[width=5.5cm]{latex-template-EO4BSIS/styles/images/Logo.png}}
+\def\consortiumLogoSmall{\includegraphics[width=2.5cm]{latex-template-EO4BSIS/styles/images/Logo.png}}
+\def\ESALogoLarge{\includegraphics[width=5.5cm]{latex-template-EO4BSIS/styles/images/LogoEsa.png}}
+
+\def\documentNumbering {Page \thepage\ of (\pageref{LastPage})}
+\def\documentCopyright {\copyright\ \consortiumName\ Consortium \the\year\ }
+
+
+\docConfidential{
+  \noindent\textbf{Disclaimer}\\
+  This document contains material, which is copyright of certain EO4BSIS consortium parties and may not be reproduced or
+  copied without permission. The information contained in this document is the
+  proprietary confidential information of certain EO4BSIS consortium parties and
+  may not be disclosed except in accordance with the consortium agreement.  \\ 
+  The commercial use of any information in this document may require a license
+  from the proprietor of that information. \\ 
+  Neither the EO4BSIS consortium as a whole, nor a certain party of the EO4BSIS
+  consortium warrant that the information contained in this document is capable
+  of use, or that use of the information is free from risk, and accept no
+  liability for loss or damage suffered by any person using the information.
+  This document does not represent the opinion of the European Community, and the
+  European Community is not responsible for any use that might be made of its
+  content. }
+
+\docPublic{
+  \noindent\textbf{Disclaimer}\\
+  This document contains material, which is the copyright of certain EO4BSIS
+  consortium parties, and may not be reproduced or copied without permission.
+  All EO4BSIS consortium parties have agreed to the full publication of this
+  document.
+  The commercial use of any information contained in this document may
+  require a license from the proprietor of that information.\\
+  Neither the EO4BSIS consortium as a whole, nor a certain party of the EO4BSIS consortium warrant that the information contained in this document is capable of use, or that use of the information is free from risk, and accept no liability for loss or damage suffered by any person using this information.\\
+  This document does not represent the opinion of the European Space Agency, and the European Space Agency is not responsible for any use that might be made of its content. }
+
+\def\documentImpressum{
+  \begin{tabular} {p{4.25cm}p{11.0cm}}
+    \multicolumn{2}{l}{\textbf{Impressum}} \\ 
+    Full project title        & EO4BSIS: Earth Observation Data 
+for Science and Innovation in the Black Sea \\ 
+    Title of the workpackage  & D6.2 Deoxygenation in the Black Sea : Knowledge Gap Analysis \\
+    %Editor                    & Name, company \\
+    Project Co-ordinator      & Marilaure Grégoire, ULiège \\
+    %Technical Manager         & Felipe Huici, NEC\\
+    \textbf{Copyright notice} & \copyright\ \the\year\ Participants in project \consortiumName\ \\
+  \end{tabular}    
+}
+
+% \fancypagestyle{plain}{%
+% \fancyhf{} % clear all header and footer fields
+% \fancyfoot[C]{\bfseries \thepage} % except the center
+% \renewcommand{\headrulewidth}{0pt}
+% \renewcommand{\footrulewidth}{0pt}}
+
+\fancypagestyle{changeFrontPage}{%
+\fancyhf{} % clear all header and footer fields
+\lhead{\consortiumLogoLarge}
+\rhead{\ESALogoLarge}
+\lfoot{\footnotesize{\documentCopyright\ } }
+\rfoot{\footnotesize{\documentNumbering\ }} %
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}}
+
+
+%% header and footer                                   %
+\pagestyle{fancy}                                      %
+\fancyhead{} % clear all header fields                 %
+\fancyhead[RE,LO]{\consortiumLogoSmall}                %
+\fancyhead[RO,LE]{\documentTitle}                      %
+\fancyfoot{} % clear all footer fields                 %
+\fancyfoot[RO,LE]{\footnotesize{\documentNumbering\ }} %
+\fancyfoot[RE,LO]{\footnotesize{\documentCopyright\ }} %
+\renewcommand{\headrulewidth}{0.4pt}                   %
+\renewcommand{\footrulewidth}{0.4pt}                   %
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% changeGlobalDefs.tex ends here
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: t
+%%% End: 
